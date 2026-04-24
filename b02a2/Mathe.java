@@ -1,5 +1,5 @@
 public class Mathe {
-    public static int fak(int n){
+    public static int fakLoop(int n){
         int tmp;
         // Den Fall abdecken das n eine negative Zahl ist.
         if(n < 0){
@@ -18,5 +18,13 @@ public class Mathe {
 	    --n;
         }
 	    return tmp;
+    }
+
+    public static int fakRek(int n){
+        if(n == 0){
+            return 1;
+        }
+        int fak = n * fakRek(n-1);
+        return fak;  
     }
 }
