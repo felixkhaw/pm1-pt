@@ -10,7 +10,7 @@ public class Mathe {
         
 	    int i = 1;
         while(n > 1){
-            System.out.println("Runde: " + i);
+            // System.out.println("Runde: " + i);
             // System.out.println("tmp: " + tmp + "*" + (n-1) + " = " +  tmp*(n-1) );
             tmp = tmp * (n-1);
 		
