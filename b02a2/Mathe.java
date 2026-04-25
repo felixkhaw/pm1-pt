@@ -2,8 +2,7 @@ public class Mathe {
     public static int fakLoop(int n){
         int tmp;
         if(n < 0){
-            System.out.println("Error: es wurde eine negative Zahl übergeben!!!")
-            return;
+            return -1;
         } else {
             tmp = n;
         }
@@ -26,7 +25,8 @@ public class Mathe {
 
     public static void quadrateAusgabeRueck(int n){
         while(n>0){
-            System.out.println(n*n);
+            int quad = n*n;
+            System.out.println("Das Quadrat der Zahl " + n + " ist " + quad);
             --n;
         } 
     }

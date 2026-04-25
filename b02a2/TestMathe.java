@@ -1,7 +1,19 @@
 public class TestMathe {
     public static void main(String[]args){
-        System.out.println("Die Faktultät mit Fuktion Math.fakLoop()von 8 ist: " + Mathe.fakLoop(8));
-        System.out.println("Die Faktultät mit Fuktion Math.fakRek()von 8 ist: " + Mathe.fakRek(8));
-        Mathe.quadrateAusgabeRueck(8);
+        if (args.length != 1) {
+			System.out.println("Verwendung java test: <zahl>");
+			return;
+		}
+
+		int fak = Integer.parseInt(args[0]);
+    
+        if(Mathe.fakLoop(fak) == -1){
+            System.out.println("Fehler, falsche Eingabe!");
+            return;
+        }
+
+        System.out.println("Die Faktultät von " + fak + " mit Math.fakLoop() ist: " + Mathe.fakLoop(fak));
+        System.out.println("Die Faktultät von " + fak + " mit Math.fakLoop() ist: " + Mathe.fakRek(fak));
+        Mathe.quadrateAusgabeRueck(fak);
     }
 }
