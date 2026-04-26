@@ -12,11 +12,13 @@ public class Zeichenkette {
 			throw new IllegalArgumentException("Ungültiger Parameter");
 		}
 
-		if(stunde<=12){
+		if(stunde<= 12 && stunde >= 0){
 			ergebnis = "Guten Morgen, " + name + " !";
 		} else {
 			if(stunde>=18){
 				ergebnis = "Guten Abend, " + name + " !";
+			} else {
+				ergebnis = "Guten Tag, " + name + " !";
 			}
 		}
 		return ergebnis;
