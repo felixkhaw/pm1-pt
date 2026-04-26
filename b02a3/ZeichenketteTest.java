@@ -3,7 +3,7 @@ public class ZeichenketteTest {
 		System.out.println("Testen der Klasse Zeichenkette.java");
 		int n = 0;
 		while(n<24){
-			System.out.println("Aufruf der Methode grussMitZeit mit den Parametern " + n + " und Jo");
+			//System.out.println("Aufruf der Methode grussMitZeit mit den Parametern " + n + " und Jo");
 			System.out.println(Zeichenkette.grussMitZeit(n, "Jo"));
 			++n;
 		}
