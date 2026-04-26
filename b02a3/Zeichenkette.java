@@ -1,24 +1,17 @@
 public class Zeichenkette {
 	public static String grussMitZeit(int stunde, String name){
 		String ergebnis = "";
-		if(name.length() == 1){
-			//System.out.println(name.length());
-			System.out.println("Error: Es gibt keinen Namen mit nur einem Buchstaben");
-			//throw new IllegalArgumentException("Ungültiger Parameter");
-		}
-		// Wenn stunde größer oder gleich 24 ist, ist der Wert außerhalb des gewünschten Bereiches.
-		if(stunde >= 24){
-			System.out.println("Error: Der Parameter Stunde ist nicht im gewünschten Bereich");
-			throw new IllegalArgumentException("Ungültiger Parameter");
-		}
+//		if(stunde >= 24){
+//			System.out.println("Error: Der Parameter Stunde ist nicht im gewünschten Bereich");
+//		}
 
-		if(stunde<= 12 && stunde >= 0){
-			ergebnis = "Guten Morgen, " + name + " !";
+		if(stunde<= 12){
+			ergebnis = "(Stunde: " + stunde + ") => Guten Morgen, " + name + " !";
 		} else {
 			if(stunde>=18){
-				ergebnis = "Guten Abend, " + name + " !";
+				ergebnis = "(Stunde: " + stunde + ") => Guten Abend, " + name + " !";
 			} else {
-				ergebnis = "Guten Tag, " + name + " !";
+				ergebnis = "(Stunde: " + stunde + ") => Guten Tag, " + name + " !";
 			}
 		}
 		return ergebnis;
