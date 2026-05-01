@@ -1,27 +1,27 @@
 public class Wertebereich {
     public static boolean testIntervallNullBisHundert(int x){
-		boolean status;
-		for(int i = 0; i<=100; i++){
-			if(i == x){
-				status = true;
-			} else {
-				status = false;
-			}
-		}
-		return status;
-	}
+		  for(int i = 0; i < 100; i++){
+			  if(i == x){
+				  return true;
+			  }
+		  }
+		  return false;
+	  }
 
 	public static boolean testIntervallMinusZwanzigBisPlusZwanzig(int x){
-		boolean status;
 		for(int i = -20; i<=20; i++){
+		  // System.out.println("For wird ausgeführt!");
 			if(i == x){
-				for(int i = 4; i<=8; i++){
-					status = true;
+			  // System.out.println("If in for 1 wird ausgeführt!");
+				for(int j = 4; j<=8; j++){
+				  if(j == x){
+				    return false;
+				  }
 				}
-			} else {
-				status = false;
+				return true;
 			}
 		}
-		return status;
+		return false;
 	}
 }
+
