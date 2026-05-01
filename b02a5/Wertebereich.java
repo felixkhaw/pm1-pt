@@ -23,5 +23,13 @@ public class Wertebereich {
 		}
 		return false;
 	}
+	
+	public static boolean testUngeradeNichtNegativeZahl(int x){
+		return (x % 2 != 0) && (x >= 0);
+	}
+	
+	public static boolean testYXkleinerxYoBk12(int x, int y){
+		return (x < y) || ( x > 12 && y > 12);
+	}
 }
 
